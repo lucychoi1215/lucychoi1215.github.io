@@ -9,11 +9,11 @@ let actressInfo2 = () => {
 }
 
 let actressInfo3 = () => {
-  document.getElementById("name3").innerText = "Liyan, Class 2022"
+  document.getElementById("name3").innerText = "Liyan Ibrahim, Class 2022"
 }
 
 let actressInfo4 = () => {
-  document.getElementById("name4").innerText = "Maira, Class 2021"
+  document.getElementById("name4").innerText = "Maira Sheikh, Class 2021"
 }
 
 let detailsContainer = document.getElementById("button");
