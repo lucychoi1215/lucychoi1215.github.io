@@ -8,6 +8,7 @@
 body {
   background-color: #efddb5;
 }
+
 .NavigationBar {
   position: fixed;
   width: 100vw;
@@ -71,9 +72,7 @@ li a {
 #space {
   display: flex;
   width: 55vw;
-
 }
-
 
 
 #teaserContainer {
@@ -91,9 +90,8 @@ li a {
   width: 45vw;
   margin-right: 3vw;
   /* margin-left: 50%; */
-
-
 }
+
 
 #videoLink img {
   width: 100px;
@@ -102,12 +100,14 @@ li a {
 }
 
 
+/* About page CSS */
 .MainContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100vw;
   height: auto;
+
 }
 
 .MainContainer h1 {
@@ -158,7 +158,7 @@ li a {
   color: #298989;
 }
 
-
+/* Actors Page CSS */
 .actorContainer {
   display: flex;
   flex-direction: row;
@@ -195,13 +195,6 @@ li a {
   margin-top: 30px;
 }
 
-.footer {
-  padding: 10vh 0 5vh 0;
-  text-align: center;
-  font-size: 8pt;
-  line-height: 2;
-
-}
 
 #video {
   margin-top: 10vh;
@@ -231,6 +224,14 @@ li a {
   box-shadow: 3px 5px black;
   border: 1px solid black;
 
+
+}
+
+.footer {
+  padding: 10vh 0 5vh 0;
+  text-align: center;
+  font-size: 8pt;
+  line-height: 2;
 
 }
 

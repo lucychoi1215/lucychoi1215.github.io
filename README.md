@@ -1,1 +1,15 @@
 # lucychoi1215.github.io
+
+Documentation
+
+Project Name: 30MFF Website
+
+Project Description: 30MFF website is a project that features our group's film made in 30 minutes. Due to a constrained time frame given to us, we were unable to produce a high-quality or a sophisticated video compared to the actual films that are featured in currently existing film festivals. Taking the idea of "novice" further, I wanted to design a website that can be easily navigated by the users; my website doesn't have tons of information and texts to read and each elements are spaced out so that the it gives off a light-weight and an enjoyable experience to the users.
+
+Process: First, I designed a simple, low-fidelity wireframes using Adobe XD and implemented them onto the website using HTML and CSS. I wanted to make the website welcoming and easy-to-tackle for existing and potential users of the website. So I searched up illustrations related to film and traced it up using Adobe Illustrator in which I added my own color palette then exported it as a png file. Using the colors on the png file as the main palette, I designed the other two web pages so that the designs on the web pages are consistent throughout. I also made sure there were several ways to access the film so that they don't have to look for a single link embedded somewhere on the website. Elements that required user action such as buttons were made to be intuitive through its design; border around the text and a simple hover animation was added so that the users know it's a button.
+
+Reflection/ Evaluation: I spent a lot more time designing and implementing the color palette than the actual coding mainly because I wanted the website to look like an actual running website. Initially, I was going to make the website look professional by using high-resolution images as the hero-banner on the homepage, but later changed my mind because I felt that the content of the website did not match the overall theme I was going for. So I looked up film illustrations, picked the one I thought would go well, traced it into a vector image and exported it as a png file. In the process, I had to change the colors on the illustrations several times to make sure the background color created enough contrast for texts to be legible. 
+
+Also, getting the elements and divs to stay in the exact place I wanted was time-consuming. I had to change either the font-size, the width and the height of images and divs by minor amounts and check every time to make sure they were placed on the exact spot I wanted. 
+
+In terms of the final version, I'm satisfied with how it turned out. In the process of building it, I had to adjust my creative thoughts to my coding skills so a lot of the things that I wanted to implement on the website are very much simplified. However, because it's so simplified, it's easy for people to navigate it as a first time user which is something I had put at the back of my mind while designing the website, but also something that I gradually put a lot of significance to towards the end of the project.
