@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charmonman&family=Montserrat:wght@300&family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ballet&family=Tangerine&display=swap');
+* {
+  box-sizing: border-box;
+  padding: 0;
+  /* border: 3px solid; */
+}
+
+
+#container {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+}
+
+#title {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 5vmin;
+  padding-top: 5vh;
+}
+
+#color {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.one {
+  width: 45vw;
+  height: 20vh;
+  margin: 10vh 0 10vh 0;
+font-family: 'Montserrat', sans-serif;
+font-size: 3vmin;
+}
+
+.two {
+  width: 45vw;
+  height: 20vh;
+  margin: 10vh 0 10vh 0;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3vmin;
+  text-align: right;
+}
+
+.square {
+  width: 300px;
+  height: 300px;
+  margin: 20vh 0 10vh 0;
+}
+
+.grey {
+  background-color: #96999C;
+  margin-right: 3vw;
+font-family: 'Tangerine', cursive;
+  font-size: 5vmin;
+  text-align: right;
+  letter-spacing: 3px;
+  padding-top: 5px;
+  padding-right: 5px;
+
+
+}
+
+.yellow {
+  background-color: #F5DF4D;
+font-family: 'Tangerine', cursive;
+  font-size: 5vmin;
+  text-align: right;
+  letter-spacing: 3px;
+  padding-top: 5px;
+  padding-right: 5px;
+}
