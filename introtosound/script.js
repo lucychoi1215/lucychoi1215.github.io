@@ -1,7 +1,7 @@
 let image = document.getElementById("image")
 let player= document.getElementById("player")
 
-image.addEventListener('mouseenter', () => {
+image.addEventListener('mouseClicked', () => {
   player.play();
 })
 
