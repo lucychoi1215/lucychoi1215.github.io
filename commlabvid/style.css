@@ -40,6 +40,8 @@ body, html {
   /* right: 0; */
 }
 
+
+
 #searchbar {
   width: 60vw;
   border: 1px solid #A4A4A4;
@@ -76,6 +78,10 @@ body, html {
   width: 10vmin;
 height: 5.5vmin;
 margin-left: 2vmin;
+}
+
+#searchicon:active {
+   transform: translateY(4px);
 }
 
 .logo {
