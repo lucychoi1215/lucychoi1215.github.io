@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Poppins:wght@300;600&display=swap');
+* {
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+}
+
+body, html {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #FBFAF8;
+}
+
+#GridContainer {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(8,1fr);
+  grid-column-gap: 4vmin;
+  grid-row-gap: 2vmin;
+  margin: 25vmin 3vmin 25vmin 3vmin;
+  align-items: center;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* display: flex;
+  flex-direction: row; */
+  width: 100vw;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 2vmin;
+  padding: 0;
+  right: 0;
+  overflow: hidden;
+
+}
+
+li {
+  display: inline;
+  float: right;
+
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  color:#FF8F2F;
+}
+
+#titlecontainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  /* flex-direction: column; */
+
+  align-items: center;
+  justify-content: center;
+
+  background-color: #FBFAF8;
+
+  margin: 0;
+  padding: 0;
+}
+
+#my-shine-object {
+  font-family: 'Poppins', sans-serif;
+  font-size: 45vmin;
+  position: absolute;
+  color: #FBFAF8;
+
+}
+
+#logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: auto;
+  height: 50px;
+  margin-top: 2vmin;
+
+}
+
+#introtext {
+  font-family: 'Homemade Apple', cursive;
+  font-size: 5vmin;
+  z-index: 10;
+}
+
+
+#abtContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: 5vmin;
+
+}
+
+
+.wave {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+
+  font-size: 5em;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+
+.text-hover span{
+  transition: color 3s;
+  transition-delay: 1s;
+  font-size: 2em;
+}
+
+.text-hover span:hover {
+  transition: color 0s;
+}
+
+.text-hover span:nth-child(1n):hover {
+  color: #ffb703;
+}
+
+.text-hover span:nth-child(2n):hover {
+  color: #023047;
+}
+
+.text-hover span:nth-child(3n):hover {
+  color: #219ebc;
+}
+
+#abtbody {
+  width: 100%;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: row;
+  width:100%;
+}
+
+#abtbodytext {
+  width: 60%;
+}
+
+#wave {
+  display: flex;
+  width: 40%;
+  vertical-align: center;
+  justify-content: center;
+}
+
+.project {
+  position: relative;
+  max-height: 65vmin;
+  background-color: white;
+  border-radius: 5vmin;
+  grid-column-start: 3;
+  transition: box-shadow ease-in 0.5s;
+  transition: transform ease-in 0.5s;
+  border: 0.5px solid black;
+}
+
+.project_overlay {
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+  color: white;
+  border-radius: 5vmin;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.project_overlay >* {
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+
+.project_overlay:hover {
+  opacity: 1;
+}
+
+.project_overlay >*{
+  transform: translateY(0);
+}
+
+
+.project:hover {
+  box-shadow: 8px 8px #FF8F2F;
+  transform: translate(-0.6vmin, -0.6vmin);
+}
+
+.project_title {
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 1.5vw;
+}
+
+.project_des {
+  font-family: 'Poppins';
+  font-weight: 300;
+  font-size: 0.9vw;
+  margin: 0 5vw 0 5vw;
+
+}
+
+.mockup {
+  display: block;
+  border-radius: 5vmin;
+  /* object-fit: cover; */
+  width:100%;
+  height: 100%;
+}
+
+.buttoncon {
+  display: flex;
+  flex-direction: row;
+  margin-top: 3vmin;
+
+}
+
+.button {
+
+  border-radius: 5vmin;
+  background-color: #FF8F2F;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1.2vw;
+  padding: 1vmin 3vmin 1vmin 3vmin;
+  max-width: 25vmin;
+  transition: all 0.5s;
+  cursor: pointer;
+  font-family: "Poppins";
+  grid-column-start: 3;
+  margin-right: 3vmin;
+}
+
+.buttondoc {
+
+  border-radius: 5vmin;
+  background-color: white;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 1.2vw;
+  padding: 1vmin 3vmin 1vmin 3vmin;
+  max-width: 25vmin;
+  transition: all 0.5s;
+  cursor: pointer;
+  font-family: "Poppins";
+  grid-column-start: 3;
+  margin-left: 3vmin;
+  border: 1px solid #FF8F2F;
+}
+
+.button:hover {
+  background-color: #fb7400;
+}
+
+.buttondoc:hover {
+  background-color: #DBD9D9;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 1em;
+  font-family: "Poppins";
+  color: black;
+}
+
+.item-8x {
+  grid-column-end: span 8;
+}
+
+.item-7x {
+  grid-column-end: span 7;
+}
+
+.item-5x {
+  grid-column-end: span 5;
+}
+
+.item-4x {
+  grid-column-end: span 4;
+}
+
+.item-3x {
+  grid-column-end: span 3;
+}
+
+.item-2x {
+  grid-column-end: span 2;
+}
+
+.item-1x {
+  grid-column-end: span 1;
+}
+
+@media only screen and (max-width: 600px) {
+  /* body {
+    background-color: lightblue;
+  } */
+  .text-hover {
+    font-size: 1em;
+    text-align: center;
+  }
+
+  #abtbody {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  #abtbodytext {
+    font-size: 0.7em;
+  }
+
+  .wave {
+    width: 50px;
+    font-size: 3em;
+  }
+
+  #abtContainer {
+    margin: 0;
+  }
+
+  .item-4x {
+    grid-column-end: span 6;
+  }
+
+  .project {
+    grid-column-start: 2;
+    height: 50vmin;
+    }
+
+  .project_des {
+    font-size: 0.7em;
+    margin: 0 3vmin 5vmin 3vmin;
+  }
+
+  .button {
+    border-radius: 5vmin;
+    font-size: 0.8em;
+    padding: 1vmin 2vmin 1vmin 2vmin;
+    width: 130px;
+    transition: all 0.5s;
+    cursor: pointer;
+    font-family: "Poppins";
+    grid-column-start: 3;
+    margin-right: 3vmin;
+  }
+
+  .buttondoc {
+
+    border-radius: 5vmin;
+    font-size: 0.8em;
+    padding: 1vmin 2vmin 1vmin 2vmin;
+    width: 130px;
+    transition: all 0.5s;
+    cursor: pointer;
+    font-family: "Poppins";
+    grid-column-start: 3;
+    margin-left: 3vmin;
+    border: 1px solid #FF8F2F;
+  }
+  }
+}
